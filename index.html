@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="CSS.png">
+
+    <link rel="stylesheet" type="text/css" href="normalize.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Smokum&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="./styles.css">
+    <title>Raul chupa penes</title>
+    
+</head>
+<body>  
+
+<div class="cuadro">
+    <div class="cuadroDos">
+    
+
+      <h1 class="title">Trabajo CSS y HTML</h1>
+      <p class="subtitle">  Trabajo de aprendizaje con HTML y CSS </p>
+
+    <div class="imageLuffi">
+      <button class="btn success">
+        <a href="luffy.png" >Click Aca Papi
+        ></a>
+    </button>
+    </div>
+
+    <p>
+    
+        Hojas de estilo en cascada,sirve para agarrar la etiquetas de HTML y darle estilos (color, tamaño, forma, posicion (Diseño))<br>
+        Lo que se hace con CSS es definir el estilo paso por paso en la cascada o codigo del HTML. <br><br>
+        los estilos en linea se utlizan como atributo pero en HTML, donde tambien se puede hacer CSS, pero eso seria una mala identación, ademas por especificidad, el valor de los estilos varias y el mayor será el que domine el estilo y color en parrafos, siendo un problema para desarrollar<br>
+        La forma correcta de trabajar CSS en html es dentro de la cabecera o HEAD, en la etiqueta LINK, definiendo en rel=con hoja de stili "styleshhet" en Type="text/css" y en href=la ruta donde el archivo se encuentra alojado. EJEMPLO:<b></b>
+        <br>
+
+        <div class="titleTres"><b>ETIQUETA DE CSS</b><br><br> </div>
+        
+
+        SELECTOR: Selecciona las etiquetas o propiedades de HTML.  PROPIEDAD:la cualida o atributo que se quiere cambiar, como color, tamaño o letra  valor,: se define segun la propiedad, el color, tamaño, forma entre otros. para HTML se define si utiliza todo el reglon con (display block ) o una parte con (display inline).<br><br>
+        *: selector universal, emplea todo lo de la proiedad que va dentro de las llaves
+        <br><br>
+      
+
+        En sleector, ademas del selector universal, tambien se puede especificar una parte del codigo. si es una etiqueta se designa el nombre de ella, por ejemplo (h1{....}), si es una classe se define con (.) y el nombre de la clase, con un id se inica con (#) y luego el nombre o id.<br>
+        Para seleccionar por atributo se abre un corchete [] y dentro de este el nombre del atributo, lo demas es igual que con llaves. 
+        <br>
+        si se desea cambiar por desendencia, se escribe el orden de las etiquetas. por ejempolo (h2)(p) {---}, de ese modo se especifica solo los P unicados en esa etiquetas. Para seleccion con seudoclases, el objetivo de esta es dar un funcionalidad con estilo al codigo, por ejemplo, si el cursos pasa por una palabra determinada, esta cambie de color.<br>
+        Por ejemploo:<br><br>
+      
+        <div class="titleCuatro"><b>ESPECIFICIDAD</b><br> </div>
+
+
+        Los estilos en linea son con etiqueta (Style), se puede hacer varias selecciones segun la necesidad. se trabaja en el HTML, pero no se recomienda por identación porque entorpece el codigo el CSS y JS.
+        Es similar al orden operaiconal, se organiza segun la importancia o especificidad en este caso. Si seleciona dos con la misma importancia, gana el ultimo elemento en cascada<br><br>
+        El importan se define de la sigueinte mannera. Por ejemplo:<br><br>
+       
+        <div class="figuraUno" > <img src="Especificidad.png" alt="" width="180px"> <br><br> </div>
+
+        <div class="titleCinco"> <b>METODOLOGIA BEM</b><br><br> </div>
+
+        BEM CSS es una metodología de nomenclatura para definir las clases en los nodos HTML del documento. Es decir, es una manera de nombrar las clases de los nodos de tu HTML para posteriormente atacarlos con CSS de una manera fácil, sencilla y clara.<br>
+        para trabajar con la metologia BEM, se identica la caja con un nombre especifico y conforme va adentrando a la caja le suma la identificación de la etiqueta. Por ejemplo:<br>
+        
+        <div class="figuraDos" ><img src="metologiaBEM.png" width="500px"><br><br>  </div>
+       
+        De esta forma se orgniza por bloque. teniendo en cuenta esta simbologia (nombre-form_nombre de etiqueta --nombre etiqueta consecutiva)<br><br>
+        
+        <div class="figuraTres"><img src="MetodologiaBEM2.png" width="500px"><br><br> </div>
+
+        <b>MEDIDAS</b><br>
+        Para medidas de letras, hay dos tipos, las relativas y las absolutas. Se trabaja con relativas para adaptarse en moviles. <br>
+        <b>1em=16px</b>, esto es por defecto en el navegador.  pero si lo modicamos el em toma la medida desginada al inicio. por ejemplo:<br><br>
+        .contact-form{<br>
+            front.size:25px;<br>
+        }<br>
+        .contact-form{<br>
+            front.size:5em;<br>
+        }<br>
+        <br>
+        De este modo, de este modo 1em toma el valor de 25px. y como son 5em este se multiplica por los 25px, para un total de 125px.<br>
+        <br>
+        <b>Propiedades de Texto</b><br>
+        front-size:tamaño de letra en "em" "px". <br>
+        font-family: tipografia o tipo de letra.para importar tipografia e iconos ingresamos a GoogleFonts <br>
+        Para que tenga funcionalidad, se copia el link en la la cabezera del html como tittle, para tener diferentes tipo se define segun la caja o etiqueta.<br>
+        line-height:nace en el centro de la letra y da espcio dentro del cuadro de la letra, como si fuera un encabezado y un piedepagina.<br>
+        front-weight:grosor de la letra, se define en nuemro (400,700.900...).<br>
+        front-stretch:dice que es unutil  <br>
+        front-variant:dice que es unutil <br><br>
+        
+        <b>NORMALIZE</b><br>
+        Es un codigo de css que ayuda a mejorar la visualizacion en el buscador y recetea lo comandos predeterminados de este.<br><br>
+        
+        <b>TEORIA DE CAJAS</b><br>
+        Hay dos tipos de cajas, las que son el linea y las que son en bloque, las que son en bloque son las mas importantes, siempre ajusta al ancho de su contenedor<br>
+        el elemento en linea es solamente el contenido. podemos diferencialo en los sigueintes ejemplos:<br>
+        
+    </p>  
+
+
+    </div>
+  </div>
+</body>
+</html>
